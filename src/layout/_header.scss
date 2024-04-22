@@ -1,0 +1,258 @@
+header {
+    border-top: 4px solid $clr_four;
+    z-index: 999999;
+
+    .navbar {
+        display: block;
+        padding: 0 0 0 30px;
+
+        @media (min-width:1200px) {
+            padding: 0 0 0 40px;
+        }
+
+        .menu {
+            width: 100%;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                position: relative;
+                transition: all 0.3s;
+
+                &:not(:last-child) {
+                    margin: 0 19px 0 0;
+                }
+
+                @media (min-width: 1200px) and (max-width:1399px) {
+                    &:not(:last-child) {
+                        margin: 0 25px 0 0;
+                    }
+
+                }
+
+                @media (min-width: 1400px) {
+                    &:not(:last-child) {
+                        margin: 0 35px 0 0;
+                    }
+
+                }
+
+
+
+                &:hover {
+                    .sub_menu {
+                        visibility: visible;
+                        opacity: 1;
+                        top: 100%;
+                    }
+                }
+
+                a {
+                    display: block;
+                    padding: 28px 0 32px;
+                    @include FontSize($f-weight: 600);
+
+                    i {
+                        @include FontSize ($size: 12px, $f-weight: 600);
+                    }
+                }
+
+                .sub_menu {
+                    width: 200px;
+                    position: absolute;
+                    top: 120%;
+                    visibility: hidden;
+                    opacity: 0;
+                    background-color: #fff;
+                    z-index: 999999;
+
+                    li {
+                        display: block;
+                        width: 100%;
+                        position: relative;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid $clr_line;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            height: 100%;
+                            left: 0;
+                            background-color: $clr_primary;
+                            z-index: -1;
+                            transition: all 0.5s;
+                        }
+
+                        &:hover {
+                            a {
+                                color: #fff;
+                            }
+
+
+                            &::before {
+                                width: 100%;
+                            }
+
+                        }
+                    }
+
+                    a {
+                        @extend %sub_menu_item;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .logo {
+        width: 140px;
+        padding: 15px 0;
+
+        img {
+
+            @include Img (100%, 100%, contain);
+
+        }
+    }
+
+    .right {
+
+        .right_btn {
+            @include FontSize ($f-weight: 600, $l-height: 40px);
+
+            .login {
+                display: inline-block;
+            }
+
+            .started {
+                position: relative;
+                display: inline-block;
+                padding: 0 20px;
+                margin: 0 0 0 30px;
+                background-color: $clr_five;
+                color: $clr_primary;
+                overflow: hidden;
+                z-index: 3;
+
+                &::before {
+                    z-index: -1;
+                    @extend %btn_before;
+                }
+
+                &:hover::before {
+                    transform: skewX(45deg) scale(1, 1);
+                }
+            }
+        }
+
+        .toggle_btn {
+            margin: 0 0 0 15px;
+
+            a {
+                display: block;
+            }
+
+            &:hover {
+                .line:first-child
+                {
+                    transform: rotateY(70deg) skewY(-10deg);
+                }
+                .line:nth-child(2)
+                {
+                    transform: rotateY(50deg) skewY(-18deg);
+                }
+                .line:last-child
+                {
+                    transform: rotateY(30deg) skewY(-23deg);
+                }
+            }
+
+            .line {
+                display: block;
+                width: 30px;
+                height: 3px;
+                margin: 6px 0;
+                background-color: $clr_secondary;
+                transition: all 0.3s;
+            }
+
+
+        }
+
+        .offcanvas {
+            width: auto;
+
+            .wrapper {
+
+                padding: 30px;
+
+                .content {
+
+                    width: 260px;
+
+                    .close {
+                        padding: 0 7px;
+                        font-size: 16px;
+                        color: #E72B0E;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+
+                        i {
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .logo {
+                        padding: 0;
+                        margin: 0 0 40px;
+                    }
+
+                    .accordion {
+                        .accordion-item {
+
+                            @extend %border_bottom;
+
+                            a {
+                                font-size: 13px;
+                            }
+
+                            .menu_title {
+                                display: inline-block;
+                                width: 100%;
+                                padding: 10px 0;
+                            }
+
+                            .btn_down {
+                                display: inline-block;
+                                padding: 9px;
+                                border-left: 1px solid $clr_line;
+
+                                i {
+                                    font-size: 26px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+
+                        .r_sub_menu {
+                            li {
+                                @extend %border_bottom;
+
+                                a {
+                                    @extend %sub_menu_item;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

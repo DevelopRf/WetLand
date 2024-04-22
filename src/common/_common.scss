@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #444;
+    color: #fff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: $clr_three;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h2 {
+    @include FontSize($size: 35px, $f-weight: 700, $l-height: 1.2);
+
+    transition: 0.3s;
+
+    @media (min-width:768px) {
+        @include FontSize($size: 45px);
+    }
+
+    @media (min-width:992px) {
+        @include FontSize($size: 60px);
+    }
+}
+
+h3 {
+    @include FontSize($size: 27px, $f-weight: 800, $l-height: 1.3);
+
+    @media(min-width: 576px) {
+        @include FontSize($size: 30px);
+    }
+
+    @media(min-width: 768px) {
+        @include FontSize($size: 40px);
+    }
+}
+
+h4 {
+    @include FontSize($size: 40px, $f-weight: 800, $l-height: 1.3);
+
+
+}
+
+p {
+    margin: 0;
+    @include FontSize ($f-weight: 600);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 12px;
+
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}

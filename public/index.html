@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-6 col-lg-2">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="navbar">
+                        <nav>
+                            <ul class="menu">
+                                <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Home Style 01</a></li>
+                                        <li><a href="#">Home Style 02</a></li>
+                                        <li><a href="#">Home Style 03</a></li>
+                                        <li><a href="#">Home Style 04</a></li>
+                                        <li><a href="#">Home Style 05</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Service <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Service</a></li>
+                                        <li><a href="#">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Blog Sidebar</a></li>
+                                        <li><a href="#">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Portfolio Details</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Team Details</a></li>
+                                        <li><a href="#">404 Error</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="right d-flex align-items-center justify-content-end">
+                        <div class="right_btn d-none d-md-flex">
+                            <a href="#" class="login">Login</a>
+                            <a href="#" class="started">Get Started</a>
+
+
+                        </div>
+
+                        <div class="toggle_btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#bar_menu"
+                            role="button" aria-controls="">
+                            <a href="#">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span></a>
+                        </div>
+
+                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" id="bar_menu" aria-controls="">
+
+                            <div class="wrapper">
+
+                                <div class="content">
+                                    <span class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                            class="fa-solid fa-xmark"></i></span>
+                                    <div class="logo">
+                                        <a href="#"><img src="./img/logo.png" alt=""></a>
+                                    </div>
+
+                                    <div class="accordion" id="menu_item">
+                                        <div class="accordion-item">
+                                            <div class="header d-flex">
+                                                <a href="#" class="menu_title">
+                                                    HOME
+                                                </a>
+                                                <span class="btn_down" data-bs-toggle="collapse"
+                                                    data-bs-target="#One"><i class="bi bi-plus"></i></span>
+                                            </div>
+                                            <div id="One" class="accordion-collapse collapse"
+                                                data-bs-parent="#menu_item">
+                                                <ul class="r_sub_menu">
+
+                                                    <li><a href="#">Home Style 01</a></li>
+                                                    <li><a href="#">Home Style 02</a></li>
+                                                    <li><a href="#">Home Style 03</a></li>
+                                                    <li><a href="#">Home Style 04</a></li>
+                                                    <li><a href="#">Home Style 05</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <a href="#" class="menu_title">
+                                                ABOUT
+                                            </a>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="header d-flex">
+                                                <a class="menu_title">SERVICE</a>
+                                                <span class="btn_down" data-bs-toggle="collapse"
+                                                    data-bs-target="#Three"><i class="bi bi-plus"></i></span>
+                                            </div>
+                                            <div id="Three" class="accordion-collapse collapse"
+                                                data-bs-parent="#menu_item">
+                                                <ul class="r_sub_menu">
+                                                    <li><a href="#">Service</a></li>
+                                                    <li><a href="#">Service Details</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="header d-flex">
+                                                <a href="#" class="menu_title">BLOG</a>
+                                                <span class="btn_down" data-bs-toggle="collapse"
+                                                    data-bs-target="#Four"><i class="bi bi-plus"></i></span>
+                                            </div>
+                                            <div id="Four" class="accordion-collapse collapse"
+                                                data-bs-parent="#menu_item">
+                                                <ul class="r_sub_menu">
+                                                    <li><a href="#">Blog Sidebar</a></li>
+                                                    <li><a href="#">Blog Details</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="accordion-item">
+                                            <div class="header d-flex">
+                                                <a href="#" class="menu_title">PAGES</a>
+                                                <span class="btn_down" data-bs-toggle="collapse"
+                                                    data-bs-target="#Five"><i class="bi bi-plus"></i></span>
+                                            </div>
+
+                                            <div id="Five" class="accordion-collapse collapse"
+                                                data-bs-parent="#menu_item">
+                                                <ul class="r_sub_menu">
+                                                    <li><a href="#">Faq</a></li>
+                                                    <li><a href="#">Portfolio</a></li>
+                                                    <li><a href="#">Portfolio Details</a></li>
+                                                    <li><a href="#">Team</a></li>
+                                                    <li><a href="#">Team Details</a></li>
+                                                    <li><a href="#">404 Error</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <a href="#" class="menu_title">
+                                                CONTACT
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="page_title">
+            <div class="background" style="background-image: url(./img/bg/page-title.jpg);">
+                <div class="container">
+                    <div class="title">
+                        <h2>Faq</h2>
+                        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '';">
+                            <ul class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Faq</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="pattern"><img src="./img/bg/patterns/dot.png" alt="">
+                    <img src="./img/bg/patterns/triangle.png" alt="">
+                    <img src="./img/bg/patterns/dot-2.png" alt="">
+                    <img src="./img/bg/patterns/dot-3.png" alt="">
+                    <img src="./img/bg/patterns/dot-4.png" alt="">
+                    <img src="./img/bg/patterns/plus.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="question_card">
+                            <div class="accordion" id="question">
+                                <div class="accordion-item">
+                                    <div class="header d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#first">
+                                        <a href="#" class="menu_title">What to do if you can’t access ?</a>
+                                        <span class="btn_down"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                    <div id="first" class="accordion-collapse collapse show" data-bs-parent="#question">
+                                        <p>Looking to start an online store and you're not sure where to begin? I'll
+                                            guide will help you to navigate Would you like to boost your Twitter profile
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="header d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#second">
+                                        <a href="#" class="menu_title">How to start an online store in 2021 ?</a>
+                                        <span class="btn_down"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                    <div id="second" class="accordion-collapse collapse" data-bs-parent="#question">
+                                        <p>Looking to start an online store and you're not sure where to begin? I'll
+                                            guide will help you to navigate Would you like to boost your Twitter
+                                            profile.</p>
+
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="header d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#third">
+                                        <a href="#" class="menu_title">How to change font size in wordPress ?</a>
+                                        <span class="btn_down"><i class="bi bi-plus"></i></span>
+                                    </div>
+                                    <div id="third" class="accordion-collapse collapse" data-bs-parent="#question">
+                                        <p>Looking to start an online store and you're not sure where to begin? I'll
+                                            guide will help you to navigate Would you like to boost your Twitter
+                                            profile.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-5 offset-xl-1">
+                        <div class="content">
+                            <div class="title">
+                                <h3>Loved and trusted by over 40k+ users!</h3>
+                                <p>Over the last few years, podcasts have become a huge deal. They’ve taken on a growing
+                                    role.</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <h4>87</h4>
+                                    <p>Happy Clients
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>15</h4>
+                                    <p>Projects</p>
+                                </li>
+                                <li>
+                                    <h4>42</h4>
+                                    <p>Trusted Users</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

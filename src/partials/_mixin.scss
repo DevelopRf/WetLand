@@ -1,0 +1,15 @@
+@mixin Img ($wd:null, $hd:null, $ob-f:null)
+{
+    width: $wd;
+    height: $hd;
+    object-fit: $ob-f;
+}
+
+@mixin FontSize ($size:null, $f-weight:null, $l-height:null, $l-spacing:null)
+{
+    font-size: $size;
+    font-weight: $f-weight;
+    line-height: $l-height;
+    letter-spacing: $l-spacing;
+
+}

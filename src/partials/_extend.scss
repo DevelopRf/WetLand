@@ -1,0 +1,28 @@
+%btn_before {
+    content: "";
+    position: absolute;
+    left: -20px;
+
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 135%;
+    height: 100%;
+    display: block;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+%sub_menu_item {
+    display: block;
+    padding: 10px 25px;
+    font-size: 13px;
+    color: $clr_three;
+    transition: 0.3s;
+}
+
+%border_bottom
+{
+        border: none;
+        border-bottom: 1px solid $clr_line;
+}
